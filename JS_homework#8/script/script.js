@@ -1,6 +1,10 @@
 function arraySentence(array) {
-    console.log(`${sentence[0]}${sentence[1]}${sentence[2]}${sentence[3]}${sentence[4]}${sentence[5]}`);
+  let result = "";
+  for (let i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  console.log(result);
 }
 
-let sentence = ['Hello', ' there', ' students', ' of', ' SEDC', '!'];
+let sentence = ["Hello", " there", " students", " of", " SEDC", "!"];
 arraySentence(sentence);

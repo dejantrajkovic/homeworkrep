@@ -1,25 +1,26 @@
 let numberArray = [2, 5, 3, 10, 12, "test"];
 
 function calcuteSum(array) {
-    console.log(array);
-    let arraySum = (array[0]) + (array[1]) + (array[2]) + (array[3]) + (array[4]);
-    console.log(arraySum);
+  let result = 0;
+  for (let i = 0; i < array.length; i++) {
+    number = array[i];
+    if (number === parseInt(number)) {
+      result += number;
+    }
+  }
+  console.log(result);
 }
-
 calcuteSum(numberArray);
 
-function validateNumber(number) {
+function validateNumber(array) {
+  for (let i = 0; i < array.length; i++) {
+    number = array[i];
     if (number === parseInt(number)) {
-        console.log(number);
+      console.log(number);
     } else {
-        console.log(`ERROR`);
+      console.log(`ERROR`);
     }
+  }
 }
 
-validateNumber(numberArray[0]);
-validateNumber(numberArray[1]);
-validateNumber(numberArray[2]);
-validateNumber(numberArray[3]);
-validateNumber(numberArray[4]);
-validateNumber(numberArray[5]);
-
+validateNumber(numberArray);
